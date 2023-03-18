@@ -23,7 +23,7 @@ contract section_contract {
     }
 
     // 配列の要素を返す関数
-    function getStringVlaue(uint8 x) public view returns (string memory){
+    function getArray(uint8 x) public view returns (string memory){
         return arrayA[x];
     }
 

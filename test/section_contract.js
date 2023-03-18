@@ -20,25 +20,25 @@ describe("sample", function () {
   }
 
   describe("配列関数確認", function () {
-    it("getStringVlaueがに0を渡した場合", async function () {
+    it("getArrayがに0を渡した場合", async function () {
       const { sectionContract } = await loadFixture(deployFixture);
 
       await sectionContract.setArray();
-      expect(await sectionContract.getStringVlaue(0)).to.equal("Apple");
+      expect(await sectionContract.getArray(0)).to.equal("Apple");
     });
 
-    it("getStringVlaueがに1を渡した場合", async function () {
+    it("getArrayがに1を渡した場合", async function () {
       const { sectionContract } = await loadFixture(deployFixture);
 
       await sectionContract.setArray();
-      expect(await sectionContract.getStringVlaue(1)).to.equal("Orange");
+      expect(await sectionContract.getArray(1)).to.equal("Orange");
     });
 
     it("getStringVlaueがに2を渡した場合", async function () {
       const { sectionContract } = await loadFixture(deployFixture);
 
       await sectionContract.setArray();
-      expect(await sectionContract.getStringVlaue(2)).to.equal("Pineapple");
+      expect(await sectionContract.getArray(2)).to.equal("Pineapple");
     });
 
     it("addComponentで一つ追加した場合、getIntValueとreturnLengthを検証", async function () {
